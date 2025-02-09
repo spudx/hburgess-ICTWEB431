@@ -1,0 +1,228 @@
+/* Harvy Burgess ICTWEB431 A2 */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Nav */
+nav {
+    background-color: #003B70;
+    padding: 10px;
+    text-align: center;
+}
+
+nav .menu-icon {
+    display: block;
+    color: #f4f4f4;
+    text-align: left;
+    opacity: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #003B70;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 10px 0;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 10px;
+    }
+
+    nav .menu-icon {
+        opacity: 1;
+    }
+
+    nav .menu-icon:hover {
+        cursor: pointer;
+        font-weight: bolder;
+    }
+    
+
+    nav.active ul {
+        display: flex;
+    }
+}
+
+/* Header */
+
+header {
+    background-color: #003B70;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header .logo {
+    font-family: "Arial Rounded MT Bold", Arial, sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    color: #003B70;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+h1 {
+    margin: 10px 0 0;
+    font-size: 24px;
+    color: white;
+}
+
+/* Main */
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#survey,
+#about,
+#contact {
+    margin-bottom: 60px;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+    color: #4a4b4d;
+}
+
+hr {
+    color: #003B70;
+    width: 150px;
+    margin-bottom: 45px;
+}
+
+/* Survey */
+
+fieldset {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+legend {
+    font-weight: bold;
+    color: #003B70;
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+.button-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    font-size: 22px;
+    color: #003B70;
+    background-color: white;
+    border: 2px solid rgb(212, 212, 212);
+    font-family: Arial, sans-serif;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: 0.2s;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 1px 10px 0px
+}
+
+button:hover {
+    border-color: #003B70;
+    cursor: pointer;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 22px 0px;
+}
+
+button:active {
+    background-color: #003B70;
+    border-color: #003B70;
+    color: white;
+}
+
+.thank-you {
+    font-size: 16px;
+    font-weight: bold;
+    color: #636568;
+    text-align: center;
+    margin-top: 25px;
+}
+
+/* About */
+section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #003B70;
+    margin-top: 0;
+}
+
+p {
+    line-height: 1.8;
+}
+
+/* Footer */
+footer {
+    background-color: #003B70;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+
+footer p {
+    margin: 5px 0;
+}

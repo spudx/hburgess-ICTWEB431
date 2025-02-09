@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EG Energy</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <nav>
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        <ul>
+            <li><a href="#survey">Survey</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <header>
+        <div class="logo">EG Energy</div>
+    </header>
+    <main>
+        <div id="survey">
+            <h1>Survey</h2>
+                <hr>
+                <form>
+                    <fieldset>
+                        <legend>How do you feel about our new Clean Energy Initiative?</legend>
+                        <label>
+                            <input type="radio" name="feedback" value="positive" required> Positive
+                        </label>
+                        <label>
+                            <input type="radio" name="feedback" value="neutral"> Neutral
+                        </label>
+                        <label>
+                            <input type="radio" name="feedback" value="negative"> Negative
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Are you concerned about the rise in Energy prices?</legend>
+                        <label>
+                            <input type="radio" name="concern" value="yes" required> Yes
+                        </label>
+                        <label>
+                            <input type="radio" name="concern" value="no"> No
+                        </label>
+                    </fieldset>
+                    <div class="button-wrap">
+                        <button>Submit</button>
+                    </div>
+                    <p class="thank-you">Thank you for participating!</p>
+                </form>
+        </div>
+        <div id="about">
+            <h1>About</h1>
+            <hr>
+            <section>
+                <h2>Who We Are</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet
+                    velit nec nisi tincidunt tincidunt. Integer nec justo ac risus tincidunt
+                    tincidunt. Sed euismod, nisl nec tincidunt tincidunt, nisl nisl
+                    tincidunt nisl, nec tincidunt nisl nisl nec nisl.
+                </p>
+            </section>
+
+            <section>
+                <h2>Our Mission</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet
+                    velit nec nisi tincidunt tincidunt. Integer nec justo ac risus tincidunt
+                    tincidunt. Sed euismod, nisl nec tincidunt tincidunt, nisl nisl
+                    tincidunt nisl, nec tincidunt nisl nisl nec nisl.
+                </p>
+            </section>
+
+            <section>
+                <h2>Our Team</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet
+                    velit nec nisi tincidunt tincidunt. Integer nec justo ac risus tincidunt
+                    tincidunt. Sed euismod, nisl nec tincidunt tincidunt, nisl nisl
+                    tincidunt nisl, nec tincidunt nisl nisl nec nisl.
+                </p>
+            </section>
+        </div>
+        <div id="contact">
+            <h1>Contact</h1>
+            <hr>
+            <section class="contact-info">
+                <h2>Our Office</h2>
+                <p>
+                    <strong>Address:</strong> 103 Ninth Street, Mildura Vic 3500 <br>
+                    <strong>Email:</strong> info@egenergy.com<br>
+                    <strong>Phone:</strong> 1300 000 000
+                </p>
+            </section>
+
+            <section>
+                <h2>Business Hours</h2>
+                <p>
+                    <strong>Monday - Friday:</strong> 9:00 AM - 5:00 PM<br>
+                    <strong>Saturday - Sunday:</strong> Closed
+                </p>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 EG Energy. All rights reserved.</p>
+        <p>Phone: 1300 000 000</p>
+    </footer>
+</body>
+<script>
+    function toggleMenu() {
+        const nav = document.querySelector('nav');
+        nav.classList.toggle('active');
+    }
+</script>
+
+</html>
